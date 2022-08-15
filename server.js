@@ -19,7 +19,7 @@ if (process.env.NODE_ENV === 'development') {
 	app.use(morgan('dev'));
 }
 
-app.use('/api/events', events);
+app.use('/', events);
 
 const PORT = process.env.PORT || 5000;
 app.listen(
